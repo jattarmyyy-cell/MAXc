@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SURESHOT BY DAKSH</title>
 
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1910017540362391');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1910017540362391&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+body{margin:0;background:#0f0a1e;display:flex;justify-content:center;font-family:Inter,sans-serif;color:white}
+.phone{width:390px;background:radial-gradient(120% 60% at 50% 0%, #2a1458, #0d0a1a);border-radius:28px;padding:22px 18px;text-align:center;border:1px solid #2a2550}
+.timer{margin-top:20px;border:1px solid #7a4cff80;border-radius:999px;padding:12px 20px;display:flex;justify-content:space-between;align-items:center}
+.timer b{font-size:22px}
+</style>
+</head>
+<body>
+<div class="phone">
+  <h1>SURESHOT BY DAKSH</h1>
+  
+  <a href="https://t.me/+83M3-SAeYN41ZjQ1" id="joinBtn" style="text-decoration:none">
+    <div style="background:linear-gradient(90deg,#ff9a3c,#a93cff);padding:16px;border-radius:999px;font-weight:800;margin-top:20px">✈ JOIN FREE TELEGRAM</div>
+  </a>
+
+  <div class="timer">
+    <span>Auto-join timer</span>
+    <b id="autoTimer">00:00:05</b>
+  </div>
+</div>
+
+<script>
+// 5 SECOND AUTO-JOIN TIMER - ONLY SUBSCRIBE TRACK
+let timeLeft = 5;
+const timerEl = document.getElementById('autoTimer');
+
+let countdown = setInterval(() => {
+  timeLeft--;
+  timerEl.innerHTML = 00:00:0${timeLeft};
+  if(timeLeft <= 0){
+    clearInterval(countdown);
+    timerEl.innerHTML = 00:00:00;
+    fbq('track', 'Subscribe');
+    window.location.href = "https://t.me/+83M3-SAeYN41ZjQ1";
+  }
+}, 1000);
+
+// Button pe click pe bhi sirf Subscribe
+document.getElementById('joinBtn').addEventListener('click', ()=>{
+  fbq('track', 'Subscribe');
+});
+</script>
+
+</body>
+</html>
