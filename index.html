@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SURESHOT BY DAKSH</title>
 
-<!-- Meta Pixel Code -->
+<!-- Meta Pixel Code - ONLY SUBSCRIBE TRACK -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -20,46 +20,74 @@ fbq('init', '1910017540362391');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1910017540362391&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 
 <style>
-body{margin:0;background:#0f0a1e;display:flex;justify-content:center;font-family:Inter,sans-serif;color:white}
-.phone{width:390px;background:radial-gradient(120% 60% at 50% 0%, #2a1458, #0d0a1a);border-radius:28px;padding:22px 18px;text-align:center;border:1px solid #2a2550}
-.timer{margin-top:20px;border:1px solid #7a4cff80;border-radius:999px;padding:12px 20px;display:flex;justify-content:space-between;align-items:center}
-.timer b{font-size:22px}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#0a0618;display:flex;justify-content:center;padding:0}
+.phone{width:390px;min-height:100vh;background:radial-gradient(100% 60% at 50% 0%, #2e1a6a 0%, #160f33 35%, #080616 100%);padding:18px 16px 30px;position:relative;text-align:center}
+.top-line{position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#ff8a3d,#ff3ecf,#3df0ff)}
+.badge{display:flex;justify-content:center;margin-top:18px}
+.badge span{border:1px solid #6a5cff60;background:#1a1630b3;color:#d8d5ff;font-size:10px;letter-spacing:1px;padding:8px 18px;border-radius:999px;font-weight:700}
+.img-box{margin:22px auto;width:100%;max-width:320px;height:360px;border-radius:24px;overflow:hidden;border:1px solid #ffffff25;box-shadow:0 0 40px #7a4cff30}
+.img-box img{width:100%;height:100%;object-fit:cover}
+h1{font-size:32px;font-weight:800;margin-top:18px;background:linear-gradient(90deg,#ff8aa0,#a78bff,#6ee7ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-0.5px}
+.sub{color:#b7b3d6;font-size:12px;margin:10px 0 22px;line-height:1.4}
+.btn{width:100%;background:linear-gradient(90deg,#ff9a3c,#a93cff);border:none;border-radius:16px;padding:18px;font-weight:800;font-size:18px;color:white;display:flex;justify-content:center;align-items:center;gap:10px;box-shadow:0 10px 30px #a93cff50;cursor:pointer}
+.stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:20px}
+.stat{background:#17132a;border:1px solid #3a2f66;border-radius:16px;padding:16px 6px}
+.stat b{display:block;color:white;font-size:13px;margin-top:8px}
+.stat span{color:#8b87a8;font-size:10px}
+.stat .icon{font-size:22px}
+.timer{margin-top:20px;border:1px solid #7a4cff90;background:#17132a;border-radius:999px;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+.timer span{color:#7af0ff;font-size:14px;font-weight:600}
+.timer b{color:#c8f5ff;font-size:26px;font-weight:800;letter-spacing:1px}
 </style>
 </head>
 <body>
 <div class="phone">
-  <h1>SURESHOT BY DAKSH</h1>
-  
-  <a href="https://t.me/+83M3-SAeYN41ZjQ1" id="joinBtn" style="text-decoration:none">
-    <div style="background:linear-gradient(90deg,#ff9a3c,#a93cff);padding:16px;border-radius:999px;font-weight:800;margin-top:20px">✈ JOIN FREE TELEGRAM</div>
-  </a>
+<div class="top-line"></div>
+<div class="badge"><span>SURESHOT BY DAKSH ARMY</span></div>
 
-  <div class="timer">
-    <span>Auto-join timer</span>
-    <b id="autoTimer">00:00:05</b>
-  </div>
+<div class="img-box">
+<img src="dp.jpg" alt="Sureshot By Daksh">
+</div>
+
+<h1>SURESHOT BY DAKSH</h1>
+<p class="sub">Your daily trading squad — trade together, grow together, stay active 24/7</p>
+
+<a href="https://t.me/+83M3-SAeYN41ZjQ1" id="joinBtn" style="text-decoration:none">
+<div class="btn">✈ JOIN FREE TELEGRAM</div>
+</a>
+
+<div class="stats">
+<div class="stat"><div class="icon">🕒</div><b>24/7 Active</b><span>Always online</span></div>
+<div class="stat"><div class="icon">🎁</div><b>Free To Join</b><span>No cost entry</span></div>
+<div class="stat"><div class="icon">⚡</div><b>1-Tap Access</b><span>Instant join</span></div>
+</div>
+
+<div class="timer">
+<span>Auto-join timer</span>
+<b id="autoTimer">00:00:05</b>
+</div>
+
 </div>
 
 <script>
-// 5 SECOND AUTO-JOIN TIMER - ONLY SUBSCRIBE TRACK
+// 5 SEC TIMER + ONLY SUBSCRIBE
 let timeLeft = 5;
 const timerEl = document.getElementById('autoTimer');
-
 let countdown = setInterval(() => {
   timeLeft--;
   timerEl.innerHTML = 00:00:0${timeLeft};
   if(timeLeft <= 0){
     clearInterval(countdown);
     timerEl.innerHTML = 00:00:00;
-    fbq('track', 'Subscribe');
+[10/30/2026 8:12 PM] ⁠ ᴅᴀᴋꜱʜ: fbq('track', 'Subscribe');
     window.location.href = "https://t.me/+83M3-SAeYN41ZjQ1";
   }
 }, 1000);
 
-// Button pe click pe bhi sirf Subscribe
 document.getElementById('joinBtn').addEventListener('click', ()=>{
   fbq('track', 'Subscribe');
 });
